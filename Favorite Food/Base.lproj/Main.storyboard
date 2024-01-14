@@ -16,8 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fe-br-WsP">
-                                <rect key="frame" x="155" y="415.66666666666669" width="83" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIKKA_MASALA" translatesAutoresizingMaskIntoConstraints="NO" id="JK7-ee-YaM">
+                                <rect key="frame" x="46.666666666666657" y="326" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Nmu-Zh-4Lc"/>
+                                    <constraint firstAttribute="height" constant="200" id="ftm-aN-q0g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my favorite food Tikka Masala" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjx-Cq-jXb">
+                                <rect key="frame" x="5" y="546" width="383" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="2NN-ak-sbH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,8 +36,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3Fe-br-WsP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JwP-mg-6NI"/>
-                            <constraint firstItem="3Fe-br-WsP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bbc-1v-lST"/>
+                            <constraint firstItem="JK7-ee-YaM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ktp-Bk-sgu"/>
+                            <constraint firstAttribute="trailing" secondItem="Gjx-Cq-jXb" secondAttribute="trailing" constant="5" id="jsc-x6-dAG"/>
+                            <constraint firstItem="JK7-ee-YaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nzo-g7-rrX"/>
+                            <constraint firstItem="Gjx-Cq-jXb" firstAttribute="top" secondItem="JK7-ee-YaM" secondAttribute="bottom" constant="20" id="pqV-eS-OQu"/>
+                            <constraint firstItem="Gjx-Cq-jXb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="qQx-bZ-uhA"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +50,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TIKKA_MASALA" width="400" height="300"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
